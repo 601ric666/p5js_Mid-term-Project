@@ -19,7 +19,7 @@ function setup() {
 noFill()
 //noCanvas()
 video = createCapture(VIDEO)
-//video.hide()
+video.hide()
 video.size(windowWidth,windowHeight)
 asciiDiv = createDiv()
 poseNet = ml5.poseNet(video, modelLoaded)
@@ -102,10 +102,10 @@ for (let mover of movers) {
   mover.show()
   attractor.attract(mover)
 }
-if (NX>0) {
-  attractor.pos.x = NX
+if (NX2>0) {
+  attractor.pos.x = NX2
   attractor.pos.y = NY
-  attractor.fill = (NX/2,NY/2,0)
+  attractor.fill = (NX2/2,NY/2,0)
   
 }
 attractor.show();
